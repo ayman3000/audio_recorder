@@ -64,7 +64,7 @@ public class SwiftAudioRecorderPlugin: NSObject, FlutterPlugin, AVAudioRecorderD
             result(isRecording)
         case "hasPermissions":
             print("hasPermissions")
-            switch AVAudioSession.sharedInstance().recordPermission(){
+            switch AVAudioSession.sharedInstance().RecordPermission{
             case AVAudioSession.RecordPermission.granted:
                 print("granted")
                 hasPermissions = true
